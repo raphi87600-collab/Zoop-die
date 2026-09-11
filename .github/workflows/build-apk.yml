@@ -16,7 +16,8 @@ jobs:
 
       - name: Unzip Zoopedie project
         run: unzip -q Zoopedie_GitHub_APK_Builder.zip
-
+      - name: Configure AndroidX
+        run: cp gradle.properties Zoopedie/gradle.properties
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
