@@ -21,8 +21,6 @@ jobs:
               MAIN_ACTIVITY=$(find Zoopedie/app/src/main -name MainActivity.kt | head -n 1)
               cp MainActivity.kt "$MAIN_ACTIVITY"
 
-      - name: Unzip Zoopedie project
-        run: unzip -q Zoopedie_GitHub_APK_Builder.zip
       - name: Configure AndroidX
         run: cp gradle.properties Zoopedie/gradle.properties
       - name: Set up Java
