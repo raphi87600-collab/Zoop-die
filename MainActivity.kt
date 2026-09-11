@@ -1,7 +1,8 @@
 @file:OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 
 package fr.zoopedie.app
-
+import coil.compose.AsyncImage
+import androidx.compose.ui.layout.ContentScale
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -43,9 +44,9 @@ data class Animal(
     val weight: String,
     val lifespan: String,
     val conservation: String,
-    val description: String
+    val description: String,
+    val imageUrl: String
 )
-
 private val animals = listOf(
     Animal("lion", "🦁", "Lion", "Panthera leo", "Mammifère", "Carnivore", "Savane, prairie", "Afrique subsaharienne et Inde", "1,7 à 2,5 m", "120 à 250 kg", "10 à 14 ans", "Vulnérable", "Grand félin social vivant généralement en groupes appelés hardes."),
     Animal("elephant", "🐘", "Éléphant d'Afrique", "Loxodonta africana", "Mammifère", "Herbivore", "Savane, forêt", "Afrique subsaharienne", "Jusqu'à 7,5 m", "2 700 à 6 000 kg", "60 à 70 ans", "En danger", "Le plus grand animal terrestre vivant."),
