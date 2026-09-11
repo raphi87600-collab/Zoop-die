@@ -13,6 +13,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Unzip Zoopedie project
+        run: unzip -q Zoopedie_GitHub_APK_Builder.zip
+
+      - name: Update MainActivity
+        run: |
+              MAIN_ACTIVITY=$(find Zoopedie/app/src/main -name MainActivity.kt | head -n 1)
+              cp MainActivity.kt "$MAIN_ACTIVITY"
 
       - name: Unzip Zoopedie project
         run: unzip -q Zoopedie_GitHub_APK_Builder.zip
