@@ -48,7 +48,7 @@ data class Animal(
     val imageUrl: String
 )
 private val animals = listOf(
-    Animal("lion", "🦁", "Lion", "Panthera leo", "Mammifère", "Carnivore", "Savane, prairie", "Afrique subsaharienne et Inde", "1,7 à 2,5 m", "120 à 250 kg", "10 à 14 ans", "Vulnérable", "Grand félin social vivant généralement en groupes appelés hardes."),
+    Animal("lion", "🦁", "Lion", "Panthera leo", "Mammifère", "Carnivore", "Savane, prairie", "Afrique subsaharienne et Inde", "1,7 à 2,5 m", "120 à 250 kg", "10 à 14 ans", "Vulnérable", "Grand félin social vivant généralement en groupes appelés hardes.""https://loremflickr.com/800/600/lion"),
     Animal("elephant", "🐘", "Éléphant d'Afrique", "Loxodonta africana", "Mammifère", "Herbivore", "Savane, forêt", "Afrique subsaharienne", "Jusqu'à 7,5 m", "2 700 à 6 000 kg", "60 à 70 ans", "En danger", "Le plus grand animal terrestre vivant."),
     Animal("tiger", "🐅", "Tigre", "Panthera tigris", "Mammifère", "Carnivore", "Forêt, mangrove, prairie", "Asie", "2 à 3,3 m", "90 à 300 kg", "10 à 15 ans", "En danger", "Le plus grand des félins, connu pour son pelage rayé."),
     Animal("giraffe", "🦒", "Girafe", "Giraffa camelopardalis", "Mammifère", "Herbivore", "Savane", "Afrique", "4,5 à 5,7 m", "800 à 1 200 kg", "20 à 25 ans", "Vulnérable", "Animal terrestre le plus grand du monde."),
